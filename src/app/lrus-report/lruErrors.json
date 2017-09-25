@@ -1,0 +1,17 @@
+[
+    {
+        "errorResultNumber": 1,
+        "errorName": "Leaf Rake",
+        "lruToReplace": "GDN-0011"
+    },
+    {
+        "errorResultNumber": 2,
+        "errorName": "Garden Cart",
+        "lruToReplace": "GDN-0023"
+    },
+    {
+        "errorResultNumber": 5,
+        "errorName": "Hammer",
+        "lruToReplace": "TBX-0048"
+    }
+]

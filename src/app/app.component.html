@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Elbit Systems Land and C4I</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width-device-width, initial-scale-1.0">
+</head>
+
+
+
+<body class="body">
+    
+       <header class="mainHeader">
+        <img src= "./assets/images/logo.png">
+        <nav><ul>
+          <li class="active"><a href="#">Home</a></li>
+        </ul></nav>
+      </header>
+
+      <div class='container'>
+          <h2><a [routerLink]="['applications']">Applications</a></h2>
+          
+          <router-outlet></router-outlet>
+      </div>
+      
+      <footer class="mainFooter">
+        <p>Copyright &copy; 2017 <a href="https://www.elbitsystems.com">Elbit Systems Ltd.</a></p>
+      </footer> 
+    
+    </body>
+    
+    </html>
+    

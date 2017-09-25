@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+<ul id="barList">
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">File</a>
+    <div class="dropdown-content">
+      <a href="#">Open Project    Ctrl+O</a>
+      <a href="#">Exit</a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">View</a>
+    <div class="dropdown-content">
+      <a href="#">Toolbar</a>
+      <a href="#">Status Bar</a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Tools</a>
+    <div class="dropdown-content">
+      <a href="#">Generate Report</a>
+      <a href="#">Open Report</a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Help</a>
+    <div class="dropdown-content">
+      <a href="#">about</a>
+    </div>
+  </li>
+</ul>
+
+<ul id="btnList">
+  <li class="image">
+    <img src= "../../assets/images/Disconnected_Dark.png">
+  </li>
+  <li class="image">
+    <img src= "../../assets/images/Download_Dark.png">
+  </li>
+  <li class="image">
+    <img src= "../../assets/images/Failure_Dark.png">
+  </li>
+  <li class="image">
+    <img src= "../../assets/images/Edit_Dark.png">
+  </li>
+</ul>
+
+<div id="apptext">
+  <div id="first">
+      <ul id="appList">
+          <li><a class="active" href="#home">Error Log</a></li>
+          <li><a class="active" href="#news">Sw Loader</a></li>
+          <li><a class="active" href="#contact">IBIT</a></li>
+          <li><a class="active" href="#about">LRUs Report</a></li>
+        </ul>
+  </div>
+  <div id= "second">
+    <table class = 'table'>
+      <thead>
+        <tr>
+          <th>Resulted from Error</th>
+          <th>Error Name</th>
+          <th>LRU To Replace</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor='let error of lruErrors'>
+          <td>{{ error.errorResultNumber }}</td>
+          <td>{{ error.errorName }}</td>
+          <td>{{ error.lruToReplace }}</td>
+        </tr>
+      </tbody>
+    </table>
+    
+  </div>      
+</div>
+
+
+</body>
+</html>
